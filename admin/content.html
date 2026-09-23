@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,420&family=Space+Grotesk:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/admin.css">
+<title>Site Content &middot; Studio</title>
+</head>
+<body data-page="content">
+<div class="sb-scrim"></div>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="sb-mark">Sadhwi Majumder<span>Studio Panel</span></div>
+    <a class="sb-link" href="dashboard.html">Dashboard</a>
+    <a class="sb-link" href="videos.html">Videos</a>
+    <a class="sb-link" href="analytics.html">Analytics</a>
+    <a class="sb-link on" href="content.html">Site content</a>
+    <div class="sb-foot">
+      <a href="../index.html">&larr; View website</a>
+      <button data-logout type="button">Sign out</button>
+    </div>
+  </aside>
+  <main class="main">
+    <div class="topbar">
+      <div><h1>Site content</h1><p class="tb-sub">Edit headlines, statements and contact text</p></div>
+      <button class="menu-btn" type="button">Menu</button>
+    </div>
+    <div class="panel" style="max-width:760px">
+      <div class="panel-h"><h2>Home page</h2><span class="ph-note">Hero and statement</span></div>
+      <div class="panel-b">
+        <form id="content-form" novalidate>
+          <div class="f-field">
+            <label class="f-label" for="cf-kicker">Hero top line</label>
+            <input class="f-input" id="cf-kicker" type="text">
+          </div>
+          <div class="f-row">
+            <div class="f-field"><label class="f-label" for="cf-line1">Headline, line 1</label><input class="f-input" id="cf-line1" type="text"></div>
+            <div class="f-field"><label class="f-label" for="cf-line2">Headline, line 2</label><input class="f-input" id="cf-line2" type="text"></div>
+          </div>
+          <div class="f-field">
+            <label class="f-label" for="cf-line3">Headline, line 3</label>
+            <input class="f-input" id="cf-line3" type="text">
+          </div>
+          <div class="f-field">
+            <label class="f-label" for="cf-statement">Artist statement (home page)</label>
+            <textarea class="f-textarea" id="cf-statement"></textarea>
+          </div>
+          <div class="panel-h" style="padding:1.4rem 0 1.2rem;margin-top:.6rem"><h2>About page</h2></div>
+          <div class="f-field">
+            <label class="f-label" for="cf-lede">About, opening paragraph</label>
+            <textarea class="f-textarea" id="cf-lede"></textarea>
+          </div>
+          <div class="panel-h" style="padding:1.4rem 0 1.2rem"><h2>Contact</h2></div>
+          <div class="f-field">
+            <label class="f-label" for="cf-email">Booking email</label>
+            <input class="f-input" id="cf-email" type="email">
+            <span class="f-err">Enter a valid email address.</span>
+          </div>
+          <button class="btn" type="submit">Save changes</button>
+          <p class="hint" style="margin-top:1rem">Demo: saves to this browser (localStorage). In production, these fields map to a CMS or a JSON endpoint the public pages read from.</p>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="js/admin.js"></script>
+</body>
+</html>

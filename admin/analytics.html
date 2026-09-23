@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,420&family=Space+Grotesk:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/admin.css">
+<title>Analytics &middot; Studio</title>
+</head>
+<body data-page="analytics">
+<div class="sb-scrim"></div>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="sb-mark">Sadhwi Majumder<span>Studio Panel</span></div>
+    <a class="sb-link" href="dashboard.html">Dashboard</a>
+    <a class="sb-link" href="videos.html">Videos</a>
+    <a class="sb-link on" href="analytics.html">Analytics</a>
+    <a class="sb-link" href="content.html">Site content</a>
+    <div class="sb-foot">
+      <a href="../index.html">&larr; View website</a>
+      <button data-logout type="button">Sign out</button>
+    </div>
+  </aside>
+  <main class="main">
+    <div class="topbar">
+      <div><h1>Analytics</h1><p class="tb-sub">Site and video performance</p></div>
+      <button class="menu-btn" type="button">Menu</button>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="c-label">Total views</div><div class="c-num" id="a-views">&mdash;</div><div class="c-delta up">&#9650; 12.4%</div></div>
+      <div class="card"><div class="c-label">Watch time</div><div class="c-num" id="a-hours">&mdash;</div><div class="c-delta up">&#9650; 9.7%</div></div>
+      <div class="card"><div class="c-label">Paid rentals</div><div class="c-num" id="a-rentals">&mdash;</div><div class="c-delta up">&#9650; 21.0%</div></div>
+      <div class="card"><div class="c-label">Revenue</div><div class="c-num" style="font-size:1.15rem;padding-top:.45rem">via Razorpay and Stripe dashboards</div><div class="c-delta">Connect gateway for live figures</div></div>
+    </div>
+    <div class="panel">
+      <div class="panel-h"><h2>Audience trend</h2><span class="ph-note" id="trend-note"></span></div>
+      <div class="panel-b"><svg id="trend-svg" style="width:100%;height:auto;display:block"></svg></div>
+    </div>
+    <div class="grid-2">
+      <div class="panel">
+        <div class="panel-h"><h2>Top videos</h2><span class="ph-note">By views</span></div>
+        <div class="panel-b" id="top-bars"></div>
+      </div>
+      <div class="panel">
+        <div class="panel-h"><h2>Leaderboard</h2></div>
+        <div class="panel-b" id="top-list" style="padding-top:.4rem"></div>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="js/admin.js"></script>
+</body>
+</html>

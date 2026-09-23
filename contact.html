@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Space+Grotesk:wght@300..500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#10022;</text></svg>">
+
+  <title>Bookings &middot; Sadhwi Majumder</title>
+  <meta name="description" content="Book Sadhwi Majumder for stage performances, weddings and sangeets, corporate events, festivals, film choreography and workshops.">
+</head>
+<body>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+    <header class="nav">
+    <a class="wordmark" href="index.html">Sadhwi Majumder</a>
+    <button class="burger" type="button" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="watch.html">Watch</a></li>
+      <li><a href="stream.html">Stream</a></li>
+      <li><a href="subscribe.html">Subscribe</a></li>
+      <li><a href="contact.html" aria-current="page">Bookings</a></li>
+    </ul>
+  </header>
+
+  <section class="page-head">
+    <p class="label">05 &middot; Bookings</p>
+    <h1>Book a<br><em>performance</em></h1>
+    <p class="sub">Stage performances, wedding and sangeet choreography, corporate events, college festivals, cultural programmes and film work. Send a brief below; the team replies within two working days.</p>
+  </section>
+
+  <section class="section" style="padding-top:2rem">
+    <div class="contact-grid">
+
+      <div class="form rv">
+        <form id="booking-form" novalidate>
+          <div class="field">
+            <label for="f-name">Your name</label>
+            <input id="f-name" type="text" required autocomplete="name">
+            <span class="err">Please enter your name.</span>
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" type="email" required autocomplete="email">
+            <span class="err">Please enter a valid email address.</span>
+          </div>
+          <div class="field">
+            <label for="f-org">Organisation / event name</label>
+            <input id="f-org" type="text" autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="f-type">Type of engagement</label>
+            <select id="f-type" required>
+              <option value="">Select one&hellip;</option>
+              <option>Stage performance</option>
+              <option>Wedding / sangeet choreography</option>
+              <option>Corporate event</option>
+              <option>College / school festival</option>
+              <option>Cultural festival</option>
+              <option>Film / screen choreography</option>
+              <option>Workshop / masterclass</option>
+              <option>Other</option>
+            </select>
+            <span class="err">Please select an option.</span>
+          </div>
+          <div class="field">
+            <label for="f-date">Proposed date(s)</label>
+            <input id="f-date" type="text" placeholder="e.g. 14 February 2027, or &lsquo;flexible, March&rsquo;">
+          </div>
+          <div class="field">
+            <label for="f-msg">Brief details</label>
+            <textarea id="f-msg" required placeholder="City, venue, audience size, duration, and the tone you have in mind&hellip;"></textarea>
+            <span class="err">Please add a few details so we can respond accurately.</span>
+          </div>
+          <button class="btn solid" type="submit">Send the brief</button>
+          <p class="form-note">Front-end demo; connect this form to an email service or a small server endpoint to receive submissions.</p>
+        </form>
+        <div class="form-ok">Thank you. Your brief has been received and the team will reply within two working days.</div>
+      </div>
+
+      <div class="direct rv rv-d1">
+        <p>For direct enquiries, use the contacts below. The booking inbox is handled by the artist's management; general enquiries and press are welcome through social channels.</p>
+        <dl>
+          <div class="d-row"><dt>Bookings</dt><dd><a href="mailto:sadhwimajumdar@gmail.com">sadhwimajumdar@gmail.com</a></dd></div>
+          <div class="d-row"><dt>Instagram</dt><dd><a href="https://www.instagram.com/sadhwimajumder/" target="_blank" rel="noopener">@sadhwimajumder</a></dd></div>
+          <div class="d-row"><dt>YouTube</dt><dd><a href="https://www.youtube.com/@SadhwiMajumder" target="_blank" rel="noopener">@SadhwiMajumder</a></dd></div>
+          <div class="d-row"><dt>Based in</dt><dd>Kolkata, India; available nationally and internationally</dd></div>
+          <div class="d-row"><dt>Lead time</dt><dd>4 to 6 weeks preferred</dd></div>
+        </dl>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="foot-cta">
+      <p>Available for stage, screen and private events</p>
+      <a href="contact.html">Book a performance &#8599;</a>
+    </div>
+    <div class="foot-bar">
+      <span>&copy; 2026 Sadhwi Majumder &middot; Kolkata, India</span>
+      <span class="soc">
+        <a href="https://www.youtube.com/@SadhwiMajumder" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.instagram.com/sadhwimajumder/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/sadhwimajumder" target="_blank" rel="noopener">Facebook</a>
+      </span>
+      <span><a href="admin/login.html">Artist login</a></span>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

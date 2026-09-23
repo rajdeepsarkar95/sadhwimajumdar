@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,420&family=Space+Grotesk:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/admin.css">
+<title>Dashboard &middot; Studio</title>
+</head>
+<body data-page="dashboard">
+<div class="sb-scrim"></div>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="sb-mark">Sadhwi Majumder<span>Studio Panel</span></div>
+    <a class="sb-link on" href="dashboard.html">Dashboard</a>
+    <a class="sb-link" href="videos.html">Videos</a>
+    <a class="sb-link" href="analytics.html">Analytics</a>
+    <a class="sb-link" href="content.html">Site content</a>
+    <div class="sb-foot">
+      <a href="../index.html">&larr; View website</a>
+      <button data-logout type="button">Sign out</button>
+    </div>
+  </aside>
+  <main class="main">
+    <div class="topbar">
+      <div><h1>Dashboard</h1><p class="tb-sub">Overview, last 30 days</p></div>
+      <button class="menu-btn" type="button">Menu</button>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="c-label">Total views</div><div class="c-num" id="k-views">&mdash;</div><div class="c-delta up">&#9650; 12.4% vs previous period</div></div>
+      <div class="card"><div class="c-label">Likes</div><div class="c-num" id="k-likes">&mdash;</div><div class="c-delta up">&#9650; 8.1%</div></div>
+      <div class="card"><div class="c-label">Paid rentals</div><div class="c-num" id="k-sales">&mdash;</div><div class="c-delta up">&#9650; 21.0%</div></div>
+      <div class="card"><div class="c-label">Streaming revenue</div><div class="c-num" id="k-rev">&mdash;</div><div class="c-delta down">&#9660; 3.2% (demo data)</div></div>
+    </div>
+    <div class="grid-2">
+      <div class="panel">
+        <div class="panel-h"><h2>Views by video</h2><span class="ph-note">All time</span></div>
+        <div class="panel-b" id="dash-bars"></div>
+      </div>
+      <div class="panel">
+        <div class="panel-h"><h2>Recent uploads</h2><a href="videos.html" class="btn ghost sm">Manage</a></div>
+        <div class="tbl-wrap"><table><thead><tr><th>Video</th><th>Status</th><th>Views</th><th>Date</th></tr></thead><tbody id="recent-body"></tbody></table></div>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="js/admin.js"></script>
+</body>
+</html>
